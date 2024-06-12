@@ -103,13 +103,10 @@ header .buttons a:hover {
 .welcome {
   height: 50%;
 }
-.welcome {
-  height: 50%;
-}
 .banner > div {
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: center;
 }
 .banner h3 {
   font-weight: bolder;
@@ -200,6 +197,7 @@ header .buttons a:hover {
   text-overflow: ellipsis;
 }
 .description > p,
-.description > h3 {
+.description > h3,
+.welcome > p {
   text-transform: capitalize;
 }
