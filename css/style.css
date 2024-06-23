@@ -68,7 +68,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 8vh;
+  min-height: 8vh;
 }
 header .logo {
   color: rgb(84, 177, 227);
@@ -145,7 +145,7 @@ header .buttons a:hover {
 }
 .main {
   background-color: #ecf9fa;
-  padding-top: 2em;
+  padding-top: 1em;
 }
 .search {
   color: #c9c9c9;
