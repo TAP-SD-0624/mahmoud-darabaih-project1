@@ -147,6 +147,9 @@ header .buttons a:hover {
   background-color: #ecf9fa;
   padding-top: 2em;
 }
+.search {
+  color: #c9c9c9;
+}
 .search-and-filter {
   padding-left: 0.5em;
   margin-bottom: 1em;
@@ -174,6 +177,11 @@ header .buttons a:hover {
   flex-direction: column;
   justify-content: space-evenly;
 }
+.sort > div:nth-child(1),
+.filter > div:nth-child(1) {
+  font-size: small;
+}
+
 .select {
   display: flex;
   justify-content: space-between;
@@ -232,5 +240,8 @@ header .buttons a:hover {
 .description > p,
 .description > h3,
 .welcome > p {
+  text-transform: capitalize;
+}
+div {
   text-transform: capitalize;
 }
