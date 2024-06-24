@@ -68,7 +68,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 8vh;
+  min-height: 8vh;
 }
 header .logo {
   color: rgb(84, 177, 227);
@@ -142,23 +142,64 @@ header .buttons a:hover {
   height: 100%;
   background: linear-gradient(to right, #07ac49, #03c180);
   clip-path: polygon(0 0, 100% 0, 100% 100%);
-  /* clip-path: polygon(100% 0, 100% 100%, 0 0); */
+}
+.main {
+  background-color: #ecf9fa;
+  padding-top: 1em;
+}
+.search {
+  color: #c9c9c9;
+}
+.search-and-filter {
+  padding-left: 0.5em;
+  margin-bottom: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 7px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+}
+.filters {
+  min-width: 30%;
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+}
+.filters > div {
+  min-width: 50%;
+  border-left: 1px solid #c9c9c9;
+  padding: 0.5em;
+}
+.sort,
+.filter {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.sort > div:nth-child(1),
+.filter > div:nth-child(1) {
+  font-size: small;
+}
+
+.select {
+  display: flex;
+  justify-content: space-between;
+}
+.count {
+  margin-bottom: 1em;
 }
 .courses {
-  background-color: #ecf9fa;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  padding: 60px 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(255px, 1fr));
+  gap: 1em;
 }
 .course-card {
-  width: 17%;
   min-height: 300px;
   background-color: #f0f0f0;
   border-radius: 7px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
   transition: all 0.3s ease;
-  margin: 10px;
 }
 .course-card:hover {
   transform: scale(1.02);
@@ -199,5 +240,8 @@ header .buttons a:hover {
 .description > p,
 .description > h3,
 .welcome > p {
+  text-transform: capitalize;
+}
+div {
   text-transform: capitalize;
 }
