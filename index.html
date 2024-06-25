@@ -16,13 +16,13 @@
     <header class="container">
       <div class="logo">Web Topics</div>
       <div class="buttons">
-        <a href="" target="_blank"
-          ><ion-icon
+        <a href="#" id="theme-toggle" onclick="toggleTheme()">
+          <ion-icon
             name="moon-outline"
             style="margin-right: 3px; margin-bottom: -2px"
-          ></ion-icon
-          >Dark mode</a
-        >
+          ></ion-icon>
+          Dark mode
+        </a>
         <a href="" target="_blank">
           <ion-icon
             name="heart-outline"
@@ -44,20 +44,29 @@
     </section>
     <main class="main container">
       <div class="search-and-filter">
-        <div class="search">Search the website</div>
+        <div>
+          <div class="search">
+            <ion-icon
+              name="search-outline"
+              style="margin-right: 3px; margin-bottom: -2px"
+              >></ion-icon
+            >
+            Search the website
+          </div>
+        </div>
         <div class="filters">
           <div class="sort">
             <div>sort by:</div>
             <div class="select">
               <div>default</div>
-              <div>V</div>
+              <div><ion-icon name="chevron-down-outline"></ion-icon></div>
             </div>
           </div>
           <div class="filter">
             <div>filter by:</div>
             <div class="select">
               <div>default</div>
-              <div>V</div>
+              <div><ion-icon name="chevron-down-outline"></ion-icon></div>
             </div>
           </div>
         </div>
