@@ -17,12 +17,6 @@ document.addEventListener("DOMContentLoaded", function () {
   // Load common sections
   loadHTML("#header-container", "header.html");
   loadHTML("#footer-container", "footer.html");
-
-  // Fetch topics.json and display topics
-  // fetch('topics.json')
-  //   .then(response => response.json())
-  //   .then(data => displayTopics(data))
-  //   .catch(error => console.error('Error fetching data:', error));
 });
 // Theme feature
 function toggleTheme() {
