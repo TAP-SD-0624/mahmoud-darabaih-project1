@@ -1,3 +1,23 @@
+document.addEventListener("DOMContentLoaded", function () {
+  // Function to load HTML content into a specified element
+  function loadHTML(selector, url) {
+    fetch(url)
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Network response was not ok");
+        }
+        return response.text();
+      })
+      .then((data) => {
+        document.querySelector(selector).innerHTML = data;
+      })
+      .catch((error) => console.error("Error loading HTML:", error));
+  }
+
+  // Load common sections
+  loadHTML("#header-container", "header.html");
+  loadHTML("#footer-container", "footer.html");
+});
 // Theme feature
 function toggleTheme() {
   document.body.classList.toggle("dark-mode");
