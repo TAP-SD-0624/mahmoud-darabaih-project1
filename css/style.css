@@ -156,7 +156,7 @@ header .buttons a:hover {
 }
 .main {
   background-color: var(--bg_body);
-  padding-top: 1em;
+  padding: 1em 0;
 }
 .search {
   color: #c9c9c9;
