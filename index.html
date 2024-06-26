@@ -16,13 +16,13 @@
     <header class="container">
       <div class="logo">Web Topics</div>
       <div class="buttons">
-        <a href="" target="_blank"
-          ><ion-icon
+        <a href="#" id="theme-toggle" onclick="toggleTheme()">
+          <ion-icon
             name="moon-outline"
             style="margin-right: 3px; margin-bottom: -2px"
-          ></ion-icon
-          >Dark mode</a
-        >
+          ></ion-icon>
+          Dark mode
+        </a>
         <a href="" target="_blank">
           <ion-icon
             name="heart-outline"
@@ -42,176 +42,208 @@
         <p>we have new design that's fresh, modern, and easy to use</p>
       </div>
     </section>
-    <section class="courses container">
-      <div class="course-card">
-        <div class="course-image">
-          <img src="/images/nodejs.webp" alt="nodeJs" />
-        </div>
-        <div class="course-data">
-          <section class="description">
-            <p>Node.js full course, backend framework and libraries</p>
-            <h3>Node.js</h3>
-          </section>
-          <div class="rate">
-            <ion-icon name="star-sharp"></ion-icon>
-            <ion-icon name="star-sharp"></ion-icon>
-            <ion-icon name="star-sharp"></ion-icon>
-            <ion-icon name="star-sharp"></ion-icon>
-            <ion-icon name="star-half-outline"></ion-icon>
-          </div>
-          <div class="author">
-            <small>Author: Mahmoud Darabaih</small>
+    <main class="main container">
+      <div class="search-and-filter">
+        <div>
+          <div class="search">
+            <ion-icon
+              name="search-outline"
+              style="margin-right: 3px; margin-bottom: -2px"
+              >></ion-icon
+            >
+            Search the website
           </div>
         </div>
-      </div>
-      <div class="course-card">
-        <div class="course-image">
-          <img src="/images/ajax.gif" alt="nodeJs" />
-        </div>
-        <div class="course-data">
-          <section class="description">
-            <p>ajax full course, backend framework and libraries</p>
-            <h3>ajax</h3>
-          </section>
-          <div class="rate">
-            <ion-icon name="star-sharp"></ion-icon>
-            <ion-icon name="star-sharp"></ion-icon>
-            <ion-icon name="star-sharp"></ion-icon>
-            <ion-icon name="star-sharp"></ion-icon>
-            <ion-icon name="star-half-outline"></ion-icon>
+        <div class="filters">
+          <div class="sort">
+            <div>sort by:</div>
+            <div class="select">
+              <div>default</div>
+              <div><ion-icon name="chevron-down-outline"></ion-icon></div>
+            </div>
           </div>
-          <div class="author">
-            <small>Author: Mahmoud Darabaih</small>
+          <div class="filter">
+            <div>filter by:</div>
+            <div class="select">
+              <div>default</div>
+              <div><ion-icon name="chevron-down-outline"></ion-icon></div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="course-card">
-        <div class="course-image">
-          <img src="/images/angular.png" alt="nodeJs" />
-        </div>
-        <div class="course-data">
-          <section class="description">
-            <p>angular full course, backend framework and libraries</p>
-            <h3>angular</h3>
-          </section>
-          <div class="rate">
-            <ion-icon name="star-sharp"></ion-icon>
-            <ion-icon name="star-sharp"></ion-icon>
-            <ion-icon name="star-sharp"></ion-icon>
-            <ion-icon name="star-sharp"></ion-icon>
-            <ion-icon name="star-half-outline"></ion-icon>
+      <div class="count">"20" Web Topics Found!</div>
+      <section class="courses">
+        <div class="course-card">
+          <div class="course-image">
+            <img src="/images/nodejs.webp" alt="nodeJs" />
           </div>
-          <div class="author">
-            <small>Author: Mahmoud Darabaih</small>
-          </div>
-        </div>
-      </div>
-      <div class="course-card">
-        <div class="course-image">
-          <img src="/images/css.webp" alt="nodeJs" />
-        </div>
-        <div class="course-data">
-          <section class="description">
-            <p>css full course, frontend framework and libraries</p>
-            <h3>css</h3>
-          </section>
-          <div class="rate">
-            <ion-icon name="star-sharp"></ion-icon>
-            <ion-icon name="star-sharp"></ion-icon>
-            <ion-icon name="star-sharp"></ion-icon>
-            <ion-icon name="star-sharp"></ion-icon>
-            <ion-icon name="star-half-outline"></ion-icon>
-          </div>
-          <div class="author">
-            <small>Author: Mahmoud Darabaih</small>
+          <div class="course-data">
+            <section class="description">
+              <p>Node.js full course, backend framework and libraries</p>
+              <h3>Node.js</h3>
+            </section>
+            <div class="rate">
+              <ion-icon name="star-sharp"></ion-icon>
+              <ion-icon name="star-sharp"></ion-icon>
+              <ion-icon name="star-sharp"></ion-icon>
+              <ion-icon name="star-sharp"></ion-icon>
+              <ion-icon name="star-half-outline"></ion-icon>
+            </div>
+            <div class="author">
+              <small>Author: Mahmoud Darabaih</small>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="course-card">
-        <div class="course-image">
-          <img src="/images/expressjs.webp" alt="nodeJs" />
-        </div>
-        <div class="course-data">
-          <section class="description">
-            <p>expressjs full course, backend framework and libraries</p>
-            <h3>expressjs</h3>
-          </section>
-          <div class="rate">
-            <ion-icon name="star-sharp"></ion-icon>
-            <ion-icon name="star-sharp"></ion-icon>
-            <ion-icon name="star-sharp"></ion-icon>
-            <ion-icon name="star-sharp"></ion-icon>
-            <ion-icon name="star-half-outline"></ion-icon>
+        <div class="course-card">
+          <div class="course-image">
+            <img src="/images/ajax.gif" alt="nodeJs" />
           </div>
-          <div class="author">
-            <small>Author: Mahmoud Darabaih</small>
-          </div>
-        </div>
-      </div>
-      <div class="course-card">
-        <div class="course-image">
-          <img src="/images/flask.webp" alt="nodeJs" />
-        </div>
-        <div class="course-data">
-          <section class="description">
-            <p>flask full course, backend framework and libraries</p>
-            <h3>flask</h3>
-          </section>
-          <div class="rate">
-            <ion-icon name="star-sharp"></ion-icon>
-            <ion-icon name="star-sharp"></ion-icon>
-            <ion-icon name="star-sharp"></ion-icon>
-            <ion-icon name="star-sharp"></ion-icon>
-            <ion-icon name="star-half-outline"></ion-icon>
-          </div>
-          <div class="author">
-            <small>Author: Mahmoud Darabaih</small>
+          <div class="course-data">
+            <section class="description">
+              <p>ajax full course, backend framework and libraries</p>
+              <h3>ajax</h3>
+            </section>
+            <div class="rate">
+              <ion-icon name="star-sharp"></ion-icon>
+              <ion-icon name="star-sharp"></ion-icon>
+              <ion-icon name="star-sharp"></ion-icon>
+              <ion-icon name="star-sharp"></ion-icon>
+              <ion-icon name="star-half-outline"></ion-icon>
+            </div>
+            <div class="author">
+              <small>Author: Mahmoud Darabaih</small>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="course-card">
-        <div class="course-image">
-          <img src="/images/graphql.png" alt="nodeJs" />
-        </div>
-        <div class="course-data">
-          <section class="description">
-            <p>graphql full course, backend framework and libraries</p>
-            <h3>graphql</h3>
-          </section>
-          <div class="rate">
-            <ion-icon name="star-sharp"></ion-icon>
-            <ion-icon name="star-sharp"></ion-icon>
-            <ion-icon name="star-sharp"></ion-icon>
-            <ion-icon name="star-sharp"></ion-icon>
-            <ion-icon name="star-half-outline"></ion-icon>
+        <div class="course-card">
+          <div class="course-image">
+            <img src="/images/angular.png" alt="nodeJs" />
           </div>
-          <div class="author">
-            <small>Author: Mahmoud Darabaih</small>
-          </div>
-        </div>
-      </div>
-      <div class="course-card">
-        <div class="course-image">
-          <img src="/images/javascript.jpg" alt="nodeJs" />
-        </div>
-        <div class="course-data">
-          <section class="description">
-            <p>javascript full course, backend framework and libraries</p>
-            <h3>javascript</h3>
-          </section>
-          <div class="rate">
-            <ion-icon name="star-sharp"></ion-icon>
-            <ion-icon name="star-sharp"></ion-icon>
-            <ion-icon name="star-sharp"></ion-icon>
-            <ion-icon name="star-sharp"></ion-icon>
-            <ion-icon name="star-half-outline"></ion-icon>
-          </div>
-          <div class="author">
-            <small>Author: Mahmoud Darabaih</small>
+          <div class="course-data">
+            <section class="description">
+              <p>angular full course, backend framework and libraries</p>
+              <h3>angular</h3>
+            </section>
+            <div class="rate">
+              <ion-icon name="star-sharp"></ion-icon>
+              <ion-icon name="star-sharp"></ion-icon>
+              <ion-icon name="star-sharp"></ion-icon>
+              <ion-icon name="star-sharp"></ion-icon>
+              <ion-icon name="star-half-outline"></ion-icon>
+            </div>
+            <div class="author">
+              <small>Author: Mahmoud Darabaih</small>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+        <div class="course-card">
+          <div class="course-image">
+            <img src="/images/css.webp" alt="nodeJs" />
+          </div>
+          <div class="course-data">
+            <section class="description">
+              <p>css full course, frontend framework and libraries</p>
+              <h3>css</h3>
+            </section>
+            <div class="rate">
+              <ion-icon name="star-sharp"></ion-icon>
+              <ion-icon name="star-sharp"></ion-icon>
+              <ion-icon name="star-sharp"></ion-icon>
+              <ion-icon name="star-sharp"></ion-icon>
+              <ion-icon name="star-half-outline"></ion-icon>
+            </div>
+            <div class="author">
+              <small>Author: Mahmoud Darabaih</small>
+            </div>
+          </div>
+        </div>
+        <div class="course-card">
+          <div class="course-image">
+            <img src="/images/expressjs.webp" alt="nodeJs" />
+          </div>
+          <div class="course-data">
+            <section class="description">
+              <p>expressjs full course, backend framework and libraries</p>
+              <h3>expressjs</h3>
+            </section>
+            <div class="rate">
+              <ion-icon name="star-sharp"></ion-icon>
+              <ion-icon name="star-sharp"></ion-icon>
+              <ion-icon name="star-sharp"></ion-icon>
+              <ion-icon name="star-sharp"></ion-icon>
+              <ion-icon name="star-half-outline"></ion-icon>
+            </div>
+            <div class="author">
+              <small>Author: Mahmoud Darabaih</small>
+            </div>
+          </div>
+        </div>
+        <div class="course-card">
+          <div class="course-image">
+            <img src="/images/flask.webp" alt="nodeJs" />
+          </div>
+          <div class="course-data">
+            <section class="description">
+              <p>flask full course, backend framework and libraries</p>
+              <h3>flask</h3>
+            </section>
+            <div class="rate">
+              <ion-icon name="star-sharp"></ion-icon>
+              <ion-icon name="star-sharp"></ion-icon>
+              <ion-icon name="star-sharp"></ion-icon>
+              <ion-icon name="star-sharp"></ion-icon>
+              <ion-icon name="star-half-outline"></ion-icon>
+            </div>
+            <div class="author">
+              <small>Author: Mahmoud Darabaih</small>
+            </div>
+          </div>
+        </div>
+        <div class="course-card">
+          <div class="course-image">
+            <img src="/images/graphql.png" alt="nodeJs" />
+          </div>
+          <div class="course-data">
+            <section class="description">
+              <p>graphql full course, backend framework and libraries</p>
+              <h3>graphql</h3>
+            </section>
+            <div class="rate">
+              <ion-icon name="star-sharp"></ion-icon>
+              <ion-icon name="star-sharp"></ion-icon>
+              <ion-icon name="star-sharp"></ion-icon>
+              <ion-icon name="star-sharp"></ion-icon>
+              <ion-icon name="star-half-outline"></ion-icon>
+            </div>
+            <div class="author">
+              <small>Author: Mahmoud Darabaih</small>
+            </div>
+          </div>
+        </div>
+        <div class="course-card">
+          <div class="course-image">
+            <img src="/images/javascript.jpg" alt="nodeJs" />
+          </div>
+          <div class="course-data">
+            <section class="description">
+              <p>javascript full course, backend framework and libraries</p>
+              <h3>javascript</h3>
+            </section>
+            <div class="rate">
+              <ion-icon name="star-sharp"></ion-icon>
+              <ion-icon name="star-sharp"></ion-icon>
+              <ion-icon name="star-sharp"></ion-icon>
+              <ion-icon name="star-sharp"></ion-icon>
+              <ion-icon name="star-half-outline"></ion-icon>
+            </div>
+            <div class="author">
+              <small>Author: Mahmoud Darabaih</small>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
     <script src="js/script.js"></script>
     <script
       type="module"
