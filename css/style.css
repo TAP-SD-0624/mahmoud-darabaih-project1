@@ -226,7 +226,7 @@ header .buttons a:hover {
   border-radius: 7px 7px 0 0;
 }
 
-.course-data {
+.course-card-data {
   padding: 20px 10px;
   box-sizing: border-box;
 }
@@ -260,4 +260,33 @@ footer {
   display: flex;
   justify-content: center;
   padding: 0.5em;
+}
+/* course data page */
+.data {
+  color: #ededed;
+  background-color: var(--details-bg);
+}
+.center-data {
+  display: flex;
+  justify-content: space-between;
+  margin: 1vw 10vw !important;
+}
+.course-data {
+  padding: 1em 0;
+  width: 65%;
+}
+.course-type {
+  color: var(--brand-secondary);
+}
+.course-data > .description {
+  text-transform: none;
+  padding-top: 2em;
+}
+.card-data {
+  width: 30%;
+}
+.card-data > img {
+  height: 50%;
+  width: 100%;
+  object-fit: fill;
 }
