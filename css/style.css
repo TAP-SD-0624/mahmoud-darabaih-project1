@@ -288,8 +288,8 @@ footer {
   position: absolute;
   right: 0;
   top: 2em;
-  background-color: #ededed;
-  border: 2px solid #ededed;
+  background-color: #f0f9ff;
+  border: 2px solid #f0f9ff;
 }
 .card-data > img {
   height: 50%;
@@ -345,8 +345,9 @@ footer {
   margin: 1vw 7vw !important;
 }
 .sub-topics > ul {
-  background-color: #0f0f0f;
+  background-color: var(--bg_body);
   padding: 0;
+  color: var(--body-text);
   border-radius: 4px;
   border: 2px solid var(--lines-color);
 }
