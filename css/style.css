@@ -261,8 +261,10 @@ footer {
 /* course data page */
 .data {
   color: #ededed;
-  background-color: var(--details-bg);
   padding: 2vh 0;
+}
+.top-data-section {
+  background-color: var(--details-bg);
 }
 .center-data {
   display: flex;
