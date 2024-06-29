@@ -97,6 +97,7 @@ header .buttons a:hover {
 }
 .banner {
   height: 15vh;
+  min-height: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -105,6 +106,7 @@ header .buttons a:hover {
 }
 .welcome {
   height: 50%;
+  min-height: 50px;
 }
 .banner > div {
   display: flex;
@@ -130,6 +132,7 @@ header .buttons a:hover {
   position: relative;
   width: 100%;
   height: 50%;
+  min-height: 50px;
 }
 .left {
   position: absolute;
@@ -259,11 +262,12 @@ footer {
 .data {
   color: #ededed;
   background-color: var(--details-bg);
+  padding: 2vh 0;
 }
 .center-data {
   display: flex;
   justify-content: space-between;
-  margin: 1vw 7vw !important;
+  margin: 0 7vw !important;
 }
 .course-data {
   padding: 1em 0;
@@ -333,4 +337,32 @@ footer {
   background-color: #fff;
   color: var(--brand-secondary);
   border-style: solid;
+}
+.sub-topics {
+  max-width: calc(67% - 14vw);
+  margin: 1vw 7vw !important;
+}
+.sub-topics > ul {
+  background-color: #0f0f0f;
+  padding: 0;
+  border-radius: 4px;
+  border: 2px solid var(--lines-color);
+}
+.sub-topics > ul > li {
+  border: 2px solid var(--lines-color);
+  list-style: none;
+  padding: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* padding-bottom: 10px; */
+  display: flex;
+  justify-content: left;
+}
+.sub-topics > ul > li > div {
+  padding: 5px;
+}
+.sub-topics > ul > li > ion-icon {
+  color: var(--brand-secondary);
+  font-size: 2em;
 }
