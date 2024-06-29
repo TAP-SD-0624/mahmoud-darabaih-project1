@@ -726,7 +726,7 @@ function createCards(data) {
   var parent = document.getElementsByClassName("courses")[0]; // Access the first element in the collection
 
   data.forEach((element) => {
-    let card = `<div class="course-card">
+    let card = `<div class="course-card" data-course="${element.topic}">
                   <div class="course-image">
                     <img src="/Logos/${element.image}" alt="${element.topic}" />
                   </div>
@@ -745,6 +745,7 @@ function createCards(data) {
     parent.insertAdjacentHTML("beforeend", card); // Use insertAdjacentHTML to append the card
   });
 }
+// create the course rating
 function getRate(rate) {
   let rateCode = "";
   let emptyStars = 5 - rate;
@@ -760,8 +761,96 @@ function getRate(rate) {
     rateCode += '<ion-icon name="star-outline"></ion-icon>';
   }
 
-  console.log(rate, emptyStars, fullStars, rateCode);
-
   return rateCode;
 }
 createCards(data);
+//
+//display course details
+document.addEventListener("DOMContentLoaded", function () {
+  const courseCards = document.querySelectorAll(".course-card");
+
+  courseCards.forEach((card) => {
+    card.addEventListener("click", function () {
+      const courseName = this.getAttribute("data-course");
+      // extract the course element from the data object
+      const element = data.find((item) => item.topic === courseName);
+      // Select the existing element
+      const oldElement = document.getElementsByClassName("courses");
+
+      // Create the new element as a string
+      const newElementString = getCourseDataCode(element);
+      // Replace the existing element with the new element
+      // oldElement.outerHTML = newElementString;
+      document.querySelector(".courses").innerHTML = newElementString;
+      document.querySelector(".courses").removeAttribute("class");
+    });
+  });
+});
+
+function getCourseDataCode(element) {
+  let courseDataCode = `<section class="data">
+  <!-- Top  -->
+  <div class="top-data-section">
+    <div class="center-data" style="position: relative">
+      <div class="course-data">
+        <div class="course-type">${element.category}</div>
+        <h3>${element.topic}</h3>
+        <div class="rate" style="margin: 0">
+        ${getRate(element.rating)}
+        </div>
+        <p class="description">
+         ${element.description}
+        </p>
+      </div>
+      <!--  -->
+      <div>
+        <div class="card-data">
+          <img src="/Logos/${element.image}" alt="${element.topic}" />
+          <div class="card-data-content">
+            <div class="type-and-auther">
+              <div class="type">${element.topic}</div>
+              <div>by</div>
+              <div class="author"><a href="">${element.name}</a></div>
+            </div>
+            <div class="favourites">
+              <p>interested about this topic?</p>
+              <button>
+                Add to Favorites<ion-icon
+                  name="heart-outline"
+                  style="margin-left: 5px; margin-bottom: -8px"
+                ></ion-icon>
+              </button>
+              <div class="author" style="text-align: center; margin-top: 10px">
+                unlimited credits
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+    </div>
+  </div>
+  <!-- End Top  -->
+  <!-- Bottom -->
+  <div class="sub-topics">
+    <ul>
+      <li><h3>${element.topic} Sub Topics</h3></li>
+      ${getSubTopics(element.subtopics)}
+    </ul>
+  </div>
+  <!-- End Bottom -->
+</section>
+`;
+  return courseDataCode;
+}
+//get course subtopics
+function getSubTopics(subtopics) {
+  let subTopicsCode = "";
+  subtopics.forEach((topic) => {
+    subTopicsCode += `<li>
+        <ion-icon name="checkmark-circle-outline"></ion-icon>
+        <div>${topic}</div>
+      </li>`;
+  });
+  return subTopicsCode;
+}
