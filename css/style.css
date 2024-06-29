@@ -263,10 +263,11 @@ footer {
 .center-data {
   display: flex;
   justify-content: space-between;
-  margin: 1vw 10vw !important;
+  margin: 1vw 7vw !important;
 }
 .course-data {
   padding: 1em 0;
+  padding-right: 10px;
   width: 65%;
 }
 .course-type {
@@ -277,10 +278,59 @@ footer {
   padding-top: 2em;
 }
 .card-data {
-  width: 30%;
+  width: 35%;
+  position: absolute;
+  right: 0;
+  top: 2em;
+  background-color: #ededed;
+  border: 2px solid #ededed;
 }
 .card-data > img {
   height: 50%;
   width: 100%;
   object-fit: fill;
+}
+.card-data > div {
+  height: 50%;
+}
+.card-data-content {
+  color: #333333;
+  padding: 10px;
+}
+.type-and-auther {
+  display: flex;
+  justify-content: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 10px;
+}
+.type-and-auther > div {
+  padding-right: 9px;
+}
+.type {
+  font-weight: bolder;
+}
+.favourites {
+  border: 2px solid #dddddd;
+  padding: 1em;
+}
+.favourites > button {
+  margin-top: 10px;
+  padding: 2px;
+  font-size: 2rem;
+  width: 100%;
+  min-height: 3em;
+  background-color: var(--brand-secondary);
+  border: none;
+  color: #fff;
+  word-spacing: 10px;
+  letter-spacing: 2px;
+  transition: all 0.7s ease;
+  text-transform: capitalize;
+}
+.favourites > button:hover {
+  background-color: #fff;
+  color: var(--brand-secondary);
+  border-style: solid;
 }
