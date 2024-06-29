@@ -233,25 +233,19 @@ header .buttons a:hover {
 .description {
   margin-bottom: 20px;
 }
-.description > p {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
 .rate {
   color: #e6981c;
   margin-top: 20px;
 }
 .author {
   color: #c9c9c9;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 .description > p,
 .description > h3,
 .welcome > p {
-  text-transform: capitalize;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 div {
   text-transform: capitalize;
